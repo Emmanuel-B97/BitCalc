@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Satoshis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+            <img src="images/BC_Logo_.png" alt="Bitcoin Logo" id="bitcoin-logo">
+            <h1>Calculadora de Satoshis</h1>
+        </div>
+        <div id="calculator">
+            <label for="btcAmount">Valor a converter:</label>
+            <input type="number" id="btcAmount" placeholder="Quantos em moeda local?">
+            <label for="currency">Escolha a moeda:</label>
+            <select id="currency">
+                <option value="usd">USD</option>
+                <option value="brl">BRL</option>
+                <option value="eur">EUR</option>
+            </select>
+            <button id="calculate">Calcular Satoshis</button>
+            <div id="result"></div>
+        </div>
+        <div id="conversionInfo"></div>
+        <div id="instructions">
+            <h2>Instruções de Uso</h2>
+            <p>1. Insira o valor na moeda local que deseja converter no campo "Valor a converter".</p>
+            <p>2. Selecione a moeda correspondente (USD, BRL ou EUR) no menu suspenso.</p>
+            <p>3. Clique no botão "Calcular Satoshis" para obter a quantidade de satoshis equivalente.</p>
+            <p>4. O resultado será exibido abaixo, juntamente com a taxa de câmbio atual do Bitcoin na moeda selecionada.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
